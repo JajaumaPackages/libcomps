@@ -6,7 +6,7 @@
 
 Name:           libcomps
 Version:        0.1.8
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Comps XML file manipulation library
 
 License:        GPLv2+
@@ -18,6 +18,7 @@ BuildRequires:  gcc
 BuildRequires:  libxml2-devel
 BuildRequires:  check-devel
 BuildRequires:  expat-devel
+BuildRequires:  python-rpm-macros
 
 %description
 Libcomps is library for structure-like manipulation with content of
@@ -141,6 +142,9 @@ popd
 %endif
 
 %changelog
+* Mon Jan 02 2017 Jajauma's Packages <jajauma@yandex.ru> - 0.1.8-3
+- Require python-rpm-macros for building
+
 * Tue Dec 13 2016 Stratakis Charalampos <cstratak@redhat.com> - 0.1.8-2
 - Rebuild for Python 3.6
 
